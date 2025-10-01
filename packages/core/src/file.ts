@@ -2,8 +2,8 @@ import ts from 'typescript';
 import { join, parse } from './path.js';
 import type { MatchesPattern } from './type.js';
 
-export const CSS_MODULE_EXTENSION = '.module.css';
-const COMPONENT_EXTENSIONS = ['.tsx', '.jsx'];
+export const CSS_MODULE_EXTENSION = '.css';
+const COMPONENT_EXTENSIONS = ['.tsx', '.jsx', '.js'];
 
 export function isCSSModuleFile(fileName: string): boolean {
   return fileName.endsWith(CSS_MODULE_EXTENSION);
